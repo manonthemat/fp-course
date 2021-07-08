@@ -332,8 +332,7 @@ produce f x =
 notReverse ::
   List a
   -> List a
-notReverse =
-  error "todo: Is it even possible?"
+notReverse = foldRight (\a as -> a :. as) Nil
 
 ---- End of list exercises
 
